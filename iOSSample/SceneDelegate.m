@@ -9,6 +9,10 @@
 #import "SceneDelegate.h"
 
 #import "RootViewController.h"
+#import "HomeController.h"
+#import "ViewController.h"
+#import "MineController.h"
+
 
 @interface SceneDelegate ()
 
@@ -22,9 +26,19 @@
     UIWindowScene *windowScene = (UIWindowScene *) scene;
     self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
     // 初始化rootController，一般使用UITabBarController或UINavigationController
-    RootViewController *rootController = [[RootViewController alloc] init];
-    self.window.rootViewController = rootController;
-    NSLog(@"scene init");
+
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+
+
+    HomeController *homeController = [[HomeController alloc] init];
+//    ViewController *viewController = [[ViewController alloc] init];
+    MineController *mineController = [[MineController alloc] init];
+
+    [tabBarController setViewControllers:@[homeController, mineController]];
+
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tabBarController];
+
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
 }
 

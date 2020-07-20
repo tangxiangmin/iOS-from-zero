@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17C591A44F24C0B8066D15A7 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C596C259D3EA4C6AF9D921 /* HomeCell.m */; };
 		17C592B106C24A973D7CA279 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C59B78921023BC87AA4786 /* RootViewController.m */; };
+		17C59A8EB6FF2A8B3A87ED71 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 17C5946DE322AD9AE65EBE11 /* README.md */; };
+		17C59AFECA35A42E66D70634 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C59AF0E82362D0C3624FB5 /* HomeController.m */; };
+		17C59CFD13F91880561435D0 /* MineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C59E99C991347CC9B0AC39 /* MineController.m */; };
 		17C59D39FE203DDF041D73EC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C594536058148BE6E629D5 /* LoginViewController.m */; };
+		25231DB924C5DFFE00749F4C /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 25231DB824C5DFFE00749F4C /* icon.bundle */; };
 		25A6A52824C491750052537E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A6A52724C491750052537E /* AppDelegate.m */; };
 		25A6A52B24C491750052537E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A6A52A24C491750052537E /* SceneDelegate.m */; };
 		25A6A52E24C491750052537E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A6A52D24C491750052537E /* ViewController.m */; };
@@ -19,10 +24,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17C59056B5478E616A9ADF2C /* MineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineController.h; path = Mine/MineController.h; sourceTree = "<group>"; };
 		17C5907E3BB62E2C4BCC412B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		17C594536058148BE6E629D5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		17C5946DE322AD9AE65EBE11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		17C596C259D3EA4C6AF9D921 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeCell.m; path = Home/View/HomeCell.m; sourceTree = "<group>"; };
 		17C598D5F1ED538B9DC309A0 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		17C59AF0E82362D0C3624FB5 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeController.m; path = Home/Controller/HomeController.m; sourceTree = "<group>"; };
 		17C59B78921023BC87AA4786 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		17C59D8CCC33AC155DE61B06 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeController.h; path = Home/Controller/HomeController.h; sourceTree = "<group>"; };
+		17C59E99C991347CC9B0AC39 /* MineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MineController.m; path = Mine/MineController.m; sourceTree = "<group>"; };
+		17C59F30C67A1185C4BE3AA2 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeCell.h; path = Home/View/HomeCell.h; sourceTree = "<group>"; };
+		25231DB824C5DFFE00749F4C /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 		25A6A52324C491750052537E /* iOSSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A6A52624C491750052537E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		25A6A52724C491750052537E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,8 +64,10 @@
 		25A6A51A24C491750052537E = {
 			isa = PBXGroup;
 			children = (
+				25231DB824C5DFFE00749F4C /* icon.bundle */,
 				25A6A52524C491750052537E /* iOSSample */,
 				25A6A52424C491750052537E /* Products */,
+				17C5946DE322AD9AE65EBE11 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +97,12 @@
 				17C598D5F1ED538B9DC309A0 /* LoginViewController.h */,
 				17C59B78921023BC87AA4786 /* RootViewController.m */,
 				17C5907E3BB62E2C4BCC412B /* RootViewController.h */,
+				17C59AF0E82362D0C3624FB5 /* HomeController.m */,
+				17C59D8CCC33AC155DE61B06 /* HomeController.h */,
+				17C59E99C991347CC9B0AC39 /* MineController.m */,
+				17C59056B5478E616A9ADF2C /* MineController.h */,
+				17C596C259D3EA4C6AF9D921 /* HomeCell.m */,
+				17C59F30C67A1185C4BE3AA2 /* HomeCell.h */,
 			);
 			path = iOSSample;
 			sourceTree = "<group>";
@@ -145,6 +166,7 @@
 			files = (
 				25A6A53624C4917A0052537E /* LaunchScreen.storyboard in Resources */,
 				25A6A53324C4917A0052537E /* Assets.xcassets in Resources */,
+				25231DB924C5DFFE00749F4C /* icon.bundle in Resources */,
 				25A6A53124C491750052537E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,6 +184,10 @@
 				25A6A52B24C491750052537E /* SceneDelegate.m in Sources */,
 				17C59D39FE203DDF041D73EC /* LoginViewController.m in Sources */,
 				17C592B106C24A973D7CA279 /* RootViewController.m in Sources */,
+				17C59AFECA35A42E66D70634 /* HomeController.m in Sources */,
+				17C59CFD13F91880561435D0 /* MineController.m in Sources */,
+				17C591A44F24C0B8066D15A7 /* HomeCell.m in Sources */,
+				17C59A8EB6FF2A8B3A87ED71 /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
