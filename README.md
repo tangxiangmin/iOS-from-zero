@@ -34,3 +34,17 @@
 * 登录页，实现文本输入、本地存储、页面跳转
 * 内容列表页，包含网络请求，文本图片内容布局、列表滚动
 * 内容详情页，
+
+## UI样式
+
+设置尺寸
+```objectivec
+frame = CGRectMake(100, 100, 100, 60)
+```
+
+## 语法补充
+* [ObjectiveC中的回调](https://www.jianshu.com/p/376ba5343097)，了解委托、事件通知、block的语法和使用
+
+## 登录页
+
+登录页主要了解基础frame布局、`UITextField`、点击事件、`AFNetworking`等基本使用

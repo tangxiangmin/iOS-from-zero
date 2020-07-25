@@ -12,4 +12,6 @@
 
 @interface HomeCell : UITableViewCell
 @property(nonatomic, weak, readwrite) id <HomeCellDelegate> delegate;
+
+- (void)layoutTableViewCellWithItem:(NSDictionary *)item;
 @end

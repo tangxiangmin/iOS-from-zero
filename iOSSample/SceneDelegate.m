@@ -12,6 +12,7 @@
 #import "HomeController.h"
 #import "ViewController.h"
 #import "MineController.h"
+#import "LoginViewController.h"
 
 
 @interface SceneDelegate ()
@@ -33,6 +34,7 @@
     HomeController *homeController = [[HomeController alloc] init];
 //    ViewController *viewController = [[ViewController alloc] init];
     MineController *mineController = [[MineController alloc] init];
+//    LoginViewController *loginViewController = [[LoginViewController alloc] init];
 
     [tabBarController setViewControllers:@[homeController, mineController]];
 

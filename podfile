@@ -1,0 +1,3 @@
+target 'iOSSample' do
+    pod 'AFNetworking', '~> 4.0'
+end
