@@ -14,17 +14,26 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - Yoga (1.14.0)
+  - YogaKit (1.18.1):
+    - Yoga (~> 1.14)
 
 DEPENDENCIES:
   - AFNetworking (~> 4.0)
+  - Yoga
+  - YogaKit
 
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - Yoga
+    - YogaKit
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Yoga: cff67a400f6b74dc38eb0bad4f156673d9aa980c
+  YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 3e10af0a3a931c7f5c3c3ff687a97544af89d55d
+PODFILE CHECKSUM: 906d064d48a372f46d1d4507fa158bc37853e266
 
 COCOAPODS: 1.9.3

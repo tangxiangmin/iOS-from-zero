@@ -76,7 +76,7 @@
         NSDictionary *jsonObj = (NSDictionary *) res;
         NSString *token = ((NSDictionary *) jsonObj[@"data"])[@"token"];
 
-        [strongSelf saveLoginInfo:_username.text password:_password.text token:token];
+        [strongSelf saveLoginInfo:username password:password token:token];
 
     }];
 

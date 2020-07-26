@@ -36,7 +36,7 @@
     MineController *mineController = [[MineController alloc] init];
 //    LoginViewController *loginViewController = [[LoginViewController alloc] init];
 
-    [tabBarController setViewControllers:@[homeController, mineController]];
+    [tabBarController setViewControllers:@[mineController, homeController]];
 
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tabBarController];
 
