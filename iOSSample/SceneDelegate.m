@@ -8,11 +8,12 @@
 
 #import "SceneDelegate.h"
 
-#import "RootViewController.h"
+//#import "RootViewController.h"
 #import "HomeController.h"
-#import "ViewController.h"
+//#import "ViewController.h"
 #import "MineController.h"
-#import "LoginViewController.h"
+//#import "LoginViewController.h"
+#import "HeroViewController.h"
 
 
 @interface SceneDelegate ()
@@ -35,8 +36,9 @@
 //    ViewController *viewController = [[ViewController alloc] init];
     MineController *mineController = [[MineController alloc] init];
 //    LoginViewController *loginViewController = [[LoginViewController alloc] init];
+    HeroViewController *heroViewController = [[HeroViewController alloc] init];
 
-    [tabBarController setViewControllers:@[mineController, homeController]];
+    [tabBarController setViewControllers:@[heroViewController, mineController, homeController]];
 
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tabBarController];
 

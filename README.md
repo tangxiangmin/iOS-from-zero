@@ -122,8 +122,15 @@ UIView *head = [[UIView alloc] init];
 ```
 具体使用还在进一步探索中...
 
+### 在子线程更新UI
+参考：[iOS子线程更新UI到主线程的三种方法](https://www.jianshu.com/p/0dcd982a1f0a)
+
+比如网络请求回调等地方，如果希望更新UI，需要在主线程更新
+
 ## 语法补充
 * [ObjectiveC中的回调](https://www.jianshu.com/p/376ba5343097)，了解委托、事件通知、block的语法和使用
+* 字符串拼接、根据索引查找数组元素、根据键名获取字典键值
+
 
 ## 各页面学习内容
 
