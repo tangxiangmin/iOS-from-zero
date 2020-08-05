@@ -4,7 +4,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <YogaKit/UIView+Yoga.h>
+#import "UIView+Yoga.h"
 
 @interface MineController : UIViewController
 @end

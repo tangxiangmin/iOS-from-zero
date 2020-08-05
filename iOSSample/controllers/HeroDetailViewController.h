@@ -4,8 +4,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <YogaKit/UIView+Yoga.h>
+#import "UIView+Yoga.h"
 
 @interface HeroDetailViewController : UIViewController
-- (instancetype)initWithData:(NSDictionary *)data;
+- (instancetype)initWithData:(NSString *)id;
 @end

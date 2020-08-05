@@ -1,74 +1,14 @@
 //
-// Created by bcz on 2020/7/20.
+// Created by bcz on 2020/8/5.
 // Copyright (c) 2020 shymean. All rights reserved.
 //
 
-#import "MineController.h"
-#import "LoginViewController.h"
-
-@interface MineController ()
-
-@end
-
-@implementation MineController
-
-- (instancetype)init {
-    self = [super init];
-
-    if (self) {
-        self.view.backgroundColor = [UIColor whiteColor];
-        self.tabBarItem.title = @"我的";
-        self.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/home@2x.png"];
-        self.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/home_selected@2x.png"];
-    }
-    return self;
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-    // 为什么这么一个布局要写这么多代码
-    UIView *head = [self renderHead];
-
-    // login btn
-    UIButton *loginBtn = [[UIButton alloc] initWithFrame:CGRectZero];
-    loginBtn.backgroundColor = [UIColor redColor];
-    [loginBtn setTitle:@"退出登录" forState:UIControlStateNormal];
-
-    [loginBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(toLogin)];
-    [loginBtn addGestureRecognizer:tap];
-
-    [loginBtn configureLayoutWithBlock:^(YGLayout *layout) {
-        layout.isEnabled = YES;
-        layout.width = YGPointValue(325);
-
-        layout.marginTop = YGPointValue(20);
-        layout.alignSelf = YGAlignCenter;
-        layout.height = YGPointValue(50);
-    }];
+#import "MineView.h"
 
 
-    // main page
-    UIView *page = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 375, 667)];
-
-    [page configureLayoutWithBlock:^(YGLayout *_Nonnull layout) {
-        layout.isEnabled = YES;
-        layout.flexDirection = YGFlexDirectionColumn;
-        layout.width = YGPointValue(375);
-        layout.marginTop = YGPointValue(64);
-        layout.marginBottom = YGPointValue(0);
-    }];
-
-    [page addSubview:head];
-    [page addSubview:loginBtn];
-    [page.yoga applyLayoutPreservingOrigin:NO];
-
-    [self.view addSubview:page];
-}
-
-- (UIView *)renderHead {
-
+@implementation MineView
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
     // 个人中心head
     UIView *head = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 375, 90)];
 //    head.backgroundColor = [UIColor purpleColor];
@@ -122,7 +62,6 @@
         layout.flex = 1;
         layout.height = YGPointValue(18);
         layout.flexShrink = 1;
-        NSLog(@"user label");
     }];
 //    headUsername.yoga.flexShrink = 1;
 
@@ -145,10 +84,47 @@
     [headMain addSubview:headUsername];
     [headMain addSubview:headSign];
 
-    return head;
+    // login btn
+    UIButton *loginBtn = [[UIButton alloc] initWithFrame:CGRectZero];
+    loginBtn.backgroundColor = [UIColor redColor];
+    [loginBtn setTitle:@"退出登录" forState:UIControlStateNormal];
+
+
+    [loginBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+
+    [loginBtn addTarget:self action:@selector(toLogin) forControlEvents:UIControlEventTouchUpInside];
+
+    [loginBtn configureLayoutWithBlock:^(YGLayout *layout) {
+        layout.isEnabled = YES;
+        layout.width = YGPointValue(325);
+
+        layout.marginTop = YGPointValue(20);
+        layout.alignSelf = YGAlignCenter;
+        layout.height = YGPointValue(50);
+    }];
+
+
+    [self configureLayoutWithBlock:^(YGLayout *_Nonnull layout) {
+        layout.isEnabled = YES;
+        layout.flexDirection = YGFlexDirectionColumn;
+        layout.width = YGPointValue(375);
+        layout.marginTop = YGPointValue(64);
+        layout.marginBottom = YGPointValue(0);
+    }];
+
+    [self addSubview:head];
+
+    [self addSubview:loginBtn];
+
+
+    [self.yoga applyLayoutPreservingOrigin:NO];
+
+    return self;
 }
 
 - (void)toLogin {
-    [self.navigationController pushViewController:[[LoginViewController alloc] init] animated:YES];
+    [self.delegate doClickLogin];
 }
+
+
 @end

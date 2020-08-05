@@ -42,7 +42,13 @@
 
 ### 设置尺寸
 ```objectivec
+// 初始化
 view.frame = CGRectMake(100, 100, 100, 60)
+
+// 更新
+CGRect newFrame = skillContent.frame;
+newFrame.size = CGSizeMake(100, 200);
+[view setFrame:newFrame];
 ```
 ### 背景色
 ```objectivec
@@ -80,6 +86,32 @@ layer.backgroundColor = [[UIColor grayColor] CGColor];
 参考:[在 iOS 里 100% 还原 Sketch 实现的阴影效果](https://juejin.im/post/5dd4cd71f265da0bf80b5820)
 
 跟上面的单边框类似，需要自己修改layer实现。
+
+### 相对位置
+
+在`initWithFrame`之后，可以修改`frame`重新指定view的位置
+
+![](http://img.shymean.com/oPic/1596554403207_428.png)
+
+在上面的布局中，由于标题的高度是根据内容撑开的，为了让下面的内容距离标题指定边距，则可以根据标题的内容高度计算内容的origin
+
+```objectivec
+UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(120, 25, 250, 20)];
+title.text = @"标题标题标题标题四标题标题标题标题四标题标题标题标题四标题标题标题标题四";
+title.font = [UIFont systemFontOfSize:20];
+//    title.lineBreakMode = NSLineBreakByWordWrapping;
+title.numberOfLines = 0;
+title.backgroundColor = [UIColor redColor];
+[title sizeToFit];
+
+UILabel *content = [[UILabel alloc] initWithFrame:CGRectMake(120, 50, 250, 20)];
+content.text = @"内容内容内容内容内容内容内容内容内容内容内容内容";
+title.font = [UIFont systemFontOfSize:14];
+content.lineBreakMode = NSLineBreakByWordWrapping;
+content.numberOfLines = 0;
+[content sizeToFit];
+content.frame = CGRectMake(120, title.frame.origin.y +  title.frame.size.height + 5, 250,  content.frame.size.height);
+```
 
 ### 使用flex布局
 参考
@@ -130,6 +162,7 @@ UIView *head = [[UIView alloc] init];
 ## 语法补充
 * [ObjectiveC中的回调](https://www.jianshu.com/p/376ba5343097)，了解委托、事件通知、block的语法和使用
 * 字符串拼接、根据索引查找数组元素、根据键名获取字典键值
+* [OC中的宏](https://www.jianshu.com/p/2613197dd6e6)，了解对象宏、方法宏的使用，减少代码量
 
 
 ## 各页面学习内容

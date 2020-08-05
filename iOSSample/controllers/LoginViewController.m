@@ -4,7 +4,8 @@
 //
 
 #import "LoginViewController.h"
-#import <AFNetworking.h>
+#import "MineController.h"
+#import "UserModel.h"
 
 @interface LoginViewController () <UITextFieldDelegate>
 
@@ -57,50 +58,20 @@
     [self getLoginInfo];
 }
 
-// todo 统一管理网络请求
+// 提交登录
 - (void)login {
-    NSLog(@"login...");
-    NSString *username = _username.text;
-    NSString *password = _password.text;
-
-    NSString *urlString = @"http://127.0.0.1:7654/api/auth/login";
-//    NSString *urlString = @"https://static001.geekbang.org/univer/classes/ios_dev/lession/45/toutiao.json";
-
-    NSURL *apiUrl = [NSURL URLWithString:urlString];
-    NSURLSession *session = [NSURLSession sharedSession];
     __weak typeof(self) weakSelf = self;
-    NSURLSessionDataTask *dataTask = [session dataTaskWithURL:apiUrl completionHandler:^(NSData *_Nullable data, NSURLResponse *_Nullable response, NSError *_Nullable error) {
-        __strong typeof(weakSelf) strongSelf = weakSelf;
-        NSError *jsonError;
-        id res = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-        NSDictionary *jsonObj = (NSDictionary *) res;
-        NSString *token = ((NSDictionary *) jsonObj[@"data"])[@"token"];
-
-        [strongSelf saveLoginInfo:username password:password token:token];
-
+    [UserModel loginWithAccount:_username.text password:_password.text success:^(NSDictionary *data) {
+        // 登录成功，返回个人中心
+        [weakSelf.navigationController pushViewController:[[MineController alloc] init] animated:YES];
     }];
-
-    [dataTask resume];
-}
-
-// 将登录信息保存到本地
-- (void)saveLoginInfo:(NSString *)username password:(NSString *)password token:(NSString *)token {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setObject:username forKey:@"username"];
-    [userDefaults setObject:password forKey:@"password"];
-    [userDefaults setObject:token forKey:@"token"];
 }
 
 // 从本地获取存储的信息
 - (void)getLoginInfo {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    NSString *username = [userDefaults objectForKey:@"username"];
-    NSString *password = [userDefaults objectForKey:@"password"];
-//    NSString *token = [userDefaults objectForKey:@"token"];
-
-//    NSLog(token);
-    _username.text = username;
-    _password.text = password;
+    NSDictionary *info = [UserModel getLoginInfo];
+    _username.text = info[@"username"];
+    _password.text = info[@"password"];
 }
 
 @end

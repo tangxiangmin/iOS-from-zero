@@ -3,63 +3,69 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17C591A44F24C0B8066D15A7 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C596C259D3EA4C6AF9D921 /* HomeCell.m */; };
-		17C592B106C24A973D7CA279 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C59B78921023BC87AA4786 /* RootViewController.m */; };
-		17C593590B3113677252BE63 /* HeroDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C598A09B0BE0C4A157584C /* HeroDetailViewController.m */; };
-		17C59572493BFB63A474E244 /* chess.json in Resources */ = {isa = PBXBuildFile; fileRef = 17C59B0404D7D01695CFDD76 /* chess.json */; };
-		17C597F7F802ECE5664C0A42 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C592D65E570324AB8BFB8A /* LoginViewController.m */; };
+		17C593193CC7CD3CA96C1B19 /* MineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C59C3EBD9549EDAF1D2487 /* MineView.m */; };
+		17C593CC9634C4BE9CD4C6CA /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C59EC1E45D0F44B8C2B76D /* HomeController.m */; };
+		17C594C20863EC1AC66861C7 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C5991D84938E5A69DA8BF3 /* UserModel.m */; };
+		17C59581242D6F13CEBA3FE4 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C59FD5AE778FDF8EB4F61F /* HttpClient.m */; };
+		17C595DF82E95C275477B146 /* HeroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C59DA5ABF26875413EDC5E /* HeroCell.m */; };
+		17C596F6EDF418D2F145D29C /* HeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C59B265D1A1E78A66F81DE /* HeroViewController.m */; };
+		17C598DA059E11234CB656A4 /* MineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C599E61C25161F6301F80A /* MineController.m */; };
+		17C5993C41EE58A34EA2BD0F /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C59CB2A005791466CDB561 /* HomeCell.m */; };
+		17C59A08BC78B5C676F4B98E /* HeroDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C598695B097090C0C049FB /* HeroDetailViewController.m */; };
 		17C59A8EB6FF2A8B3A87ED71 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 17C5946DE322AD9AE65EBE11 /* README.md */; };
-		17C59AE32B35FC77544C6849 /* HeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C59559784D6E14AFE92801 /* HeroViewController.m */; };
-		17C59AFECA35A42E66D70634 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C59AF0E82362D0C3624FB5 /* HomeController.m */; };
+		17C59AB018E883F54DF1F25B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C5920A5835F0163B6D0E04 /* LoginViewController.m */; };
+		17C59B1FE9D98EA101CE2369 /* LolModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C59168B712A6B1AF20BE5F /* LolModel.m */; };
 		17C59BBA4A33D57E0525A464 /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = 17C59B739B155CEC691425C8 /* podfile */; };
-		17C59CFD13F91880561435D0 /* MineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C59E99C991347CC9B0AC39 /* MineController.m */; };
-		17C59D99B025402E18E94C10 /* HeroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C592F73133B024FAA0A0A8 /* HeroCell.m */; };
+		17C59D3ECBDB6BE05E9839D0 /* HeroDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C59B25C7F2DA9B9FCE72E3 /* HeroDetailView.m */; };
+		17C59DD768FBE789C64710C8 /* Demo1.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C596D03327CB9674F0CC4C /* Demo1.m */; };
 		25231DB924C5DFFE00749F4C /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 25231DB824C5DFFE00749F4C /* icon.bundle */; };
 		25A6A52824C491750052537E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A6A52724C491750052537E /* AppDelegate.m */; };
 		25A6A52B24C491750052537E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A6A52A24C491750052537E /* SceneDelegate.m */; };
-		25A6A52E24C491750052537E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A6A52D24C491750052537E /* ViewController.m */; };
-		25A6A53124C491750052537E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25A6A52F24C491750052537E /* Main.storyboard */; };
 		25A6A53324C4917A0052537E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A6A53224C4917A0052537E /* Assets.xcassets */; };
-		25A6A53624C4917A0052537E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25A6A53424C4917A0052537E /* LaunchScreen.storyboard */; };
 		25A6A53924C4917A0052537E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A6A53824C4917A0052537E /* main.m */; };
 		36227B24B5EB1E5C7B72221D /* Pods_iOSSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80C2255DAC4D29913244F78 /* Pods_iOSSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		17C59056B5478E616A9ADF2C /* MineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineController.h; path = Mine/MineController.h; sourceTree = "<group>"; };
-		17C5907E3BB62E2C4BCC412B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		17C592D65E570324AB8BFB8A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Mine/LoginViewController.m; sourceTree = "<group>"; };
-		17C592F73133B024FAA0A0A8 /* HeroCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeroCell.m; path = Hero/View/HeroCell.m; sourceTree = "<group>"; };
-		17C5939496A3FB96777CFC09 /* HeroCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeroCell.h; path = Hero/View/HeroCell.h; sourceTree = "<group>"; };
+		17C5907EA09F3654BC9F8186 /* MineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineView.h; sourceTree = "<group>"; };
+		17C590E189E87049129A9EB4 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		17C59168B712A6B1AF20BE5F /* LolModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LolModel.m; sourceTree = "<group>"; };
+		17C5920A5835F0163B6D0E04 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		17C5946DE322AD9AE65EBE11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		17C59559784D6E14AFE92801 /* HeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeroViewController.m; path = Hero/HeroViewController.m; sourceTree = "<group>"; };
-		17C596C259D3EA4C6AF9D921 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeCell.m; path = Home/View/HomeCell.m; sourceTree = "<group>"; };
-		17C598A09B0BE0C4A157584C /* HeroDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeroDetailViewController.m; path = Hero/HeroDetailViewController.m; sourceTree = "<group>"; };
-		17C598D9CB3472CD1A26645B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Mine/LoginViewController.h; sourceTree = "<group>"; };
-		17C5995A0F3E75743BB3D5D0 /* HeroDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeroDetailViewController.h; path = Hero/HeroDetailViewController.h; sourceTree = "<group>"; };
-		17C59AF0E82362D0C3624FB5 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeController.m; path = Home/Controller/HomeController.m; sourceTree = "<group>"; };
-		17C59B0404D7D01695CFDD76 /* chess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = chess.json; path = mock/chess.json; sourceTree = "<group>"; };
+		17C5966F655DE7C310EAC9A4 /* LolModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LolModel.h; sourceTree = "<group>"; };
+		17C596C027D143C9DCDD0424 /* HeroDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroDetailViewController.h; sourceTree = "<group>"; };
+		17C596D03327CB9674F0CC4C /* Demo1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1.m; sourceTree = "<group>"; };
+		17C59739A8121A815CF65140 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		17C598695B097090C0C049FB /* HeroDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroDetailViewController.m; sourceTree = "<group>"; };
+		17C598B1976191E7DD3BFC22 /* HeroDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroDetailView.h; sourceTree = "<group>"; };
+		17C598FAA1FA8FB6A839E143 /* Demo1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1.h; sourceTree = "<group>"; };
+		17C5991D84938E5A69DA8BF3 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		17C59932251B478C82D25E33 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		17C599CA2B3E09950EE5BE2C /* HeroCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroCell.h; sourceTree = "<group>"; };
+		17C599E61C25161F6301F80A /* MineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineController.m; sourceTree = "<group>"; };
+		17C59B25C7F2DA9B9FCE72E3 /* HeroDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroDetailView.m; sourceTree = "<group>"; };
+		17C59B265D1A1E78A66F81DE /* HeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroViewController.m; sourceTree = "<group>"; };
 		17C59B739B155CEC691425C8 /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
-		17C59B78921023BC87AA4786 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		17C59D8CCC33AC155DE61B06 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeController.h; path = Home/Controller/HomeController.h; sourceTree = "<group>"; };
-		17C59E3512AD2028ABE4A925 /* HeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeroViewController.h; path = Hero/HeroViewController.h; sourceTree = "<group>"; };
-		17C59E99C991347CC9B0AC39 /* MineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MineController.m; path = Mine/MineController.m; sourceTree = "<group>"; };
-		17C59F30C67A1185C4BE3AA2 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeCell.h; path = Home/View/HomeCell.h; sourceTree = "<group>"; };
+		17C59C3EBD9549EDAF1D2487 /* MineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineView.m; sourceTree = "<group>"; };
+		17C59C474F1D6670B10561AC /* MineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineController.h; sourceTree = "<group>"; };
+		17C59C532803D85BB3DB5225 /* HeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroViewController.h; sourceTree = "<group>"; };
+		17C59CB2A005791466CDB561 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
+		17C59CCEFDCCF7793B54616B /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		17C59DA5ABF26875413EDC5E /* HeroCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroCell.m; sourceTree = "<group>"; };
+		17C59EA38180E147573DEC49 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
+		17C59EC1E45D0F44B8C2B76D /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		17C59FD5AE778FDF8EB4F61F /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
 		25231DB824C5DFFE00749F4C /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 		25A6A52324C491750052537E /* iOSSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A6A52624C491750052537E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		25A6A52724C491750052537E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		25A6A52924C491750052537E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		25A6A52A24C491750052537E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		25A6A52C24C491750052537E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		25A6A52D24C491750052537E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		25A6A53024C491750052537E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25A6A53224C4917A0052537E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		25A6A53524C4917A0052537E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25A6A53724C4917A0052537E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25A6A53824C4917A0052537E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A0BF267B3E33E516D4EA391F /* Pods-iOSSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSample.debug.xcconfig"; path = "Target Support Files/Pods-iOSSample/Pods-iOSSample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +85,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17C5912E615E330BB6779438 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				17C59168B712A6B1AF20BE5F /* LolModel.m */,
+				17C5966F655DE7C310EAC9A4 /* LolModel.h */,
+				17C5991D84938E5A69DA8BF3 /* UserModel.m */,
+				17C59932251B478C82D25E33 /* UserModel.h */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		17C5967BEAC2328B247AE72C /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				17C59FD5AE778FDF8EB4F61F /* HttpClient.m */,
+				17C59CCEFDCCF7793B54616B /* HttpClient.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		17C59D71856C4827B698D8D1 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				17C599CA2B3E09950EE5BE2C /* HeroCell.h */,
+				17C59DA5ABF26875413EDC5E /* HeroCell.m */,
+				17C59CB2A005791466CDB561 /* HomeCell.m */,
+				17C59EA38180E147573DEC49 /* HomeCell.h */,
+				17C59B25C7F2DA9B9FCE72E3 /* HeroDetailView.m */,
+				17C598B1976191E7DD3BFC22 /* HeroDetailView.h */,
+				17C59C3EBD9549EDAF1D2487 /* MineView.m */,
+				17C5907EA09F3654BC9F8186 /* MineView.h */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		17C59EB1D51DD8934B03DE89 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				17C598695B097090C0C049FB /* HeroDetailViewController.m */,
+				17C596C027D143C9DCDD0424 /* HeroDetailViewController.h */,
+				17C59C532803D85BB3DB5225 /* HeroViewController.h */,
+				17C59B265D1A1E78A66F81DE /* HeroViewController.m */,
+				17C590E189E87049129A9EB4 /* HomeController.h */,
+				17C59EC1E45D0F44B8C2B76D /* HomeController.m */,
+				17C5920A5835F0163B6D0E04 /* LoginViewController.m */,
+				17C59739A8121A815CF65140 /* LoginViewController.h */,
+				17C598FAA1FA8FB6A839E143 /* Demo1.h */,
+				17C596D03327CB9674F0CC4C /* Demo1.m */,
+				17C59C474F1D6670B10561AC /* MineController.h */,
+				17C599E61C25161F6301F80A /* MineController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
 		25A6A51A24C491750052537E = {
 			isa = PBXGroup;
 			children = (
@@ -89,7 +149,6 @@
 				17C59B739B155CEC691425C8 /* podfile */,
 				EF6DECB0FFE1AF6753FD1165 /* Pods */,
 				7EB4CC71D94FE917AF614E06 /* Frameworks */,
-				17C59B0404D7D01695CFDD76 /* chess.json */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,29 +167,13 @@
 				25A6A52724C491750052537E /* AppDelegate.m */,
 				25A6A52924C491750052537E /* SceneDelegate.h */,
 				25A6A52A24C491750052537E /* SceneDelegate.m */,
-				25A6A52C24C491750052537E /* ViewController.h */,
-				25A6A52D24C491750052537E /* ViewController.m */,
-				25A6A52F24C491750052537E /* Main.storyboard */,
 				25A6A53224C4917A0052537E /* Assets.xcassets */,
-				25A6A53424C4917A0052537E /* LaunchScreen.storyboard */,
 				25A6A53724C4917A0052537E /* Info.plist */,
 				25A6A53824C4917A0052537E /* main.m */,
-				17C59B78921023BC87AA4786 /* RootViewController.m */,
-				17C5907E3BB62E2C4BCC412B /* RootViewController.h */,
-				17C59AF0E82362D0C3624FB5 /* HomeController.m */,
-				17C59D8CCC33AC155DE61B06 /* HomeController.h */,
-				17C59E99C991347CC9B0AC39 /* MineController.m */,
-				17C59056B5478E616A9ADF2C /* MineController.h */,
-				17C596C259D3EA4C6AF9D921 /* HomeCell.m */,
-				17C59F30C67A1185C4BE3AA2 /* HomeCell.h */,
-				17C592D65E570324AB8BFB8A /* LoginViewController.m */,
-				17C598D9CB3472CD1A26645B /* LoginViewController.h */,
-				17C59559784D6E14AFE92801 /* HeroViewController.m */,
-				17C59E3512AD2028ABE4A925 /* HeroViewController.h */,
-				17C592F73133B024FAA0A0A8 /* HeroCell.m */,
-				17C5939496A3FB96777CFC09 /* HeroCell.h */,
-				17C598A09B0BE0C4A157584C /* HeroDetailViewController.m */,
-				17C5995A0F3E75743BB3D5D0 /* HeroDetailViewController.h */,
+				17C5967BEAC2328B247AE72C /* utils */,
+				17C59EB1D51DD8934B03DE89 /* controllers */,
+				17C5912E615E330BB6779438 /* models */,
+				17C59D71856C4827B698D8D1 /* views */,
 			);
 			path = iOSSample;
 			sourceTree = "<group>";
@@ -149,7 +192,6 @@
 				A0BF267B3E33E516D4EA391F /* Pods-iOSSample.debug.xcconfig */,
 				E0D1FACE41046BE93DD7EB96 /* Pods-iOSSample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -212,12 +254,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25A6A53624C4917A0052537E /* LaunchScreen.storyboard in Resources */,
 				25A6A53324C4917A0052537E /* Assets.xcassets in Resources */,
 				25231DB924C5DFFE00749F4C /* icon.bundle in Resources */,
-				25A6A53124C491750052537E /* Main.storyboard in Resources */,
 				17C59BBA4A33D57E0525A464 /* podfile in Resources */,
-				17C59572493BFB63A474E244 /* chess.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,42 +309,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25A6A52E24C491750052537E /* ViewController.m in Sources */,
 				25A6A52824C491750052537E /* AppDelegate.m in Sources */,
 				25A6A53924C4917A0052537E /* main.m in Sources */,
 				25A6A52B24C491750052537E /* SceneDelegate.m in Sources */,
-				17C592B106C24A973D7CA279 /* RootViewController.m in Sources */,
-				17C59AFECA35A42E66D70634 /* HomeController.m in Sources */,
-				17C59CFD13F91880561435D0 /* MineController.m in Sources */,
-				17C591A44F24C0B8066D15A7 /* HomeCell.m in Sources */,
 				17C59A8EB6FF2A8B3A87ED71 /* README.md in Sources */,
-				17C597F7F802ECE5664C0A42 /* LoginViewController.m in Sources */,
-				17C59AE32B35FC77544C6849 /* HeroViewController.m in Sources */,
-				17C59D99B025402E18E94C10 /* HeroCell.m in Sources */,
-				17C593590B3113677252BE63 /* HeroDetailViewController.m in Sources */,
+				17C59581242D6F13CEBA3FE4 /* HttpClient.m in Sources */,
+				17C59B1FE9D98EA101CE2369 /* LolModel.m in Sources */,
+				17C595DF82E95C275477B146 /* HeroCell.m in Sources */,
+				17C59A08BC78B5C676F4B98E /* HeroDetailViewController.m in Sources */,
+				17C596F6EDF418D2F145D29C /* HeroViewController.m in Sources */,
+				17C5993C41EE58A34EA2BD0F /* HomeCell.m in Sources */,
+				17C593CC9634C4BE9CD4C6CA /* HomeController.m in Sources */,
+				17C59AB018E883F54DF1F25B /* LoginViewController.m in Sources */,
+				17C59DD768FBE789C64710C8 /* Demo1.m in Sources */,
+				17C598DA059E11234CB656A4 /* MineController.m in Sources */,
+				17C594C20863EC1AC66861C7 /* UserModel.m in Sources */,
+				17C59D3ECBDB6BE05E9839D0 /* HeroDetailView.m in Sources */,
+				17C593193CC7CD3CA96C1B19 /* MineView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		25A6A52F24C491750052537E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				25A6A53024C491750052537E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		25A6A53424C4917A0052537E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				25A6A53524C4917A0052537E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		25A6A53A24C4917A0052537E /* Debug */ = {
@@ -431,6 +455,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.shymean.iOSSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -448,6 +473,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.shymean.iOSSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

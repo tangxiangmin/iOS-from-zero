@@ -14,6 +14,8 @@
 #import "MineController.h"
 //#import "LoginViewController.h"
 #import "HeroViewController.h"
+#import "HeroDetailViewController.h"
+#import "Demo1.h"
 
 
 @interface SceneDelegate ()
@@ -37,6 +39,8 @@
     MineController *mineController = [[MineController alloc] init];
 //    LoginViewController *loginViewController = [[LoginViewController alloc] init];
     HeroViewController *heroViewController = [[HeroViewController alloc] init];
+//    Demo1 *demo1 = [[Demo1 alloc] init];
+//    HeroDetailViewController *heroDetailViewController = [[HeroDetailViewController alloc] initWithData:@"172"];
 
     [tabBarController setViewControllers:@[heroViewController, mineController, homeController]];
 
